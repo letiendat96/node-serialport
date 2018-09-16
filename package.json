@@ -8,12 +8,14 @@
   },
   "license": "MIT",
   "scripts": {
+    "add-contributor": "all-contributors add",
     "rebuild": "lerna run --stream rebuild",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "docs": "cd packages/website && npm run build",
     "docs:dev": "cd packages/website && npm run start",
     "format": "eslint packages test --fix",
     "generate": "plop",
+    "generate:contributors":"all-contributors generate",
     "lint": "eslint packages test && lerna run --stream lint",
     "postinstall": "lerna bootstrap --no-ci",
     "prebuild": "lerna run --stream prebuild",
@@ -35,6 +37,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "all-contributors-cli": "^5.4.0",
     "bluebird": "^3.5.2",
     "cc": "^1.0.1",
     "chai": "^4.0.2",

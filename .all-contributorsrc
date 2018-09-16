@@ -1,0 +1,78 @@
+{
+  "projectName": "node-serialport",
+  "projectOwner": "node-serialport",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "types": {
+    "founder": {
+      "symbol": "⚡️",
+      "description": "Founder"
+    },
+    "support": {
+      "symbol": "⛑",
+      "description": "Support"
+    }
+  },
+  "contributors": [
+    {
+      "login": "voodootikigod",
+      "name": "Chris Williams",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/459?v=4",
+      "profile": "http://www.emergingtechnologyadvisor.com",
+      "contributions": [
+        "founder",
+        "code",
+        "eventOrganizing"
+      ]
+    },
+    {
+      "login": "reconbot",
+      "name": "Francis Gulotta",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25966?v=4",
+      "profile": "https://www.roborooter.com",
+      "contributions": [
+        "code",
+        "doc",
+        "eventOrganizing",
+        "infra",
+        "tool"
+      ]
+    },
+    {
+      "login": "rwaldron",
+      "name": "Rick Waldron",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/27985?v=4",
+      "profile": "http://weblog.bocoup.com",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "tool"
+      ]
+    },
+    {
+      "login": "jacobrosenthal",
+      "name": "Jacob Rosenthal",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/455796?v=4",
+      "profile": "http://www.citizengadget.com",
+      "contributions": [
+        "code",
+        "support"
+      ]
+    },
+    {
+      "login": "JayBeavers",
+      "name": "Jay Beavers",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1682199?v=4",
+      "profile": "http://jaybeavers.org",
+      "contributions": [
+        "code",
+        "support"
+      ]
+    }
+  ]
+}

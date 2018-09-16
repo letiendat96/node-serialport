@@ -1,4 +1,5 @@
 # Node Serialport
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![codecov](https://codecov.io/gh/node-serialport/node-serialport/branch/master/graph/badge.svg)](https://codecov.io/gh/node-serialport/node-serialport)
 [![Build Status](https://travis-ci.org/node-serialport/node-serialport.svg?branch=master)](https://travis-ci.org/node-serialport/node-serialport)
@@ -74,3 +75,15 @@ SerialPort follows the [Nodebots Code of Conduct](http://nodebots.io/conduct.htm
 - Data published to NodeBots is hosted at the discretion of the service administrators, and may be removed.
 - Don't build evil robots.
 - Violations of this code may result in swift and permanent expulsion from the NodeBots community.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars1.githubusercontent.com/u/459?v=4" width="100px;"/><br /><sub><b>Chris Williams</b></sub>](http://www.emergingtechnologyadvisor.com)<br />[⚡️](#founder-voodootikigod "Founder") [💻](https://github.com/node-serialport/node-serialport/commits?author=voodootikigod "Code") [📋](#eventOrganizing-voodootikigod "Event Organizing") | [<img src="https://avatars2.githubusercontent.com/u/25966?v=4" width="100px;"/><br /><sub><b>Francis Gulotta</b></sub>](https://www.roborooter.com)<br />[💻](https://github.com/node-serialport/node-serialport/commits?author=reconbot "Code") [📖](https://github.com/node-serialport/node-serialport/commits?author=reconbot "Documentation") [📋](#eventOrganizing-reconbot "Event Organizing") [🚇](#infra-reconbot "Infrastructure (Hosting, Build-Tools, etc)") [🔧](#tool-reconbot "Tools") | [<img src="https://avatars3.githubusercontent.com/u/27985?v=4" width="100px;"/><br /><sub><b>Rick Waldron</b></sub>](http://weblog.bocoup.com)<br />[💻](https://github.com/node-serialport/node-serialport/commits?author=rwaldron "Code") [📋](#eventOrganizing-rwaldron "Event Organizing") [🔧](#tool-rwaldron "Tools") | [<img src="https://avatars0.githubusercontent.com/u/455796?v=4" width="100px;"/><br /><sub><b>Jacob Rosenthal</b></sub>](http://www.citizengadget.com)<br />[💻](https://github.com/node-serialport/node-serialport/commits?author=jacobrosenthal "Code") [⛑](#support-jacobrosenthal "Support") | [<img src="https://avatars0.githubusercontent.com/u/1682199?v=4" width="100px;"/><br /><sub><b>Jay Beavers</b></sub>](http://jaybeavers.org)<br />[💻](https://github.com/node-serialport/node-serialport/commits?author=JayBeavers "Code") [⛑](#support-JayBeavers "Support") |
+| :---: | :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
