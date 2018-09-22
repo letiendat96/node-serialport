@@ -16,6 +16,7 @@
     "generate": "plop",
     "lint": "eslint packages test && lerna run --stream lint",
     "postinstall": "lerna bootstrap --no-ci",
+    "build": "lerna run build",
     "prebuild": "lerna run --stream prebuild",
     "publish": "lerna publish",
     "test": "nyc --reporter=html --reporter=text --reporter lcovonly mocha",
@@ -35,6 +36,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "^10.10.1",
     "bluebird": "^3.5.2",
     "cc": "^1.0.1",
     "chai": "^4.0.2",
@@ -54,6 +57,7 @@
     "prebuild": "^8.0.0",
     "prettier": "^1.14.2",
     "proxyquire": "^2.1.0",
-    "sinon": "^6.3.3"
+    "sinon": "^6.3.3",
+    "typescript": "^3.0.3"
   }
 }

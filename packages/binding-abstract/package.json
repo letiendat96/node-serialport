@@ -1,12 +1,20 @@
 {
   "name": "@serialport/binding-abstract",
   "version": "2.0.1",
-  "main": "binding-abstract.js",
+  "main": "dist/binding-abstract.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "wotan -p tsconfig.json lib/**/*.ts"
+  },
   "keywords": [
     "serialport-binding"
   ],
   "dependencies": {
     "debug": "^4.0.1"
+  },
+  "devDependencies": {
+    "@fimbul/wotan": "^0.14.0",
+    "mocha": "^5.2.0"
   },
   "engines": {
     "node": ">=6.0.0"
