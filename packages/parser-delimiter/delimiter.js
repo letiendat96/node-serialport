@@ -1,4 +1,5 @@
 const Transform = require('stream').Transform
+const bl = require('bl')
 
 /**
  * A transform stream that emits data each time a byte sequence is received.
@@ -25,23 +26,33 @@ class DelimiterParser extends Transform {
 
     this.includeDelimiter = options.includeDelimiter !== undefined ? options.includeDelimiter : false
     this.delimiter = Buffer.from(options.delimiter)
-    this.buffer = Buffer.alloc(0)
+    this.buffer = bl()
   }
 
   _transform(chunk, encoding, cb) {
-    let data = Buffer.concat([this.buffer, chunk])
-    let position
-    while ((position = data.indexOf(this.delimiter)) !== -1) {
-      this.push(data.slice(0, position + (this.includeDelimiter ? this.delimiter.length : 0)))
-      data = data.slice(position + this.delimiter.length)
+    debugger
+    let delimiterPosition = 0
+    let chunkOffset = 0
+    let bufferStart = 0
+    const startingBufferLength = this.buffer.length
+    this.buffer.append(chunk)
+    while ((delimiterPosition = chunk.indexOf(this.delimiter, chunkOffset)) !== -1) {
+      const bufferOffset = startingBufferLength + delimiterPosition + this.delimiter.length
+      chunkOffset = delimiterPosition + this.delimiter.length
+      const packetEnd = bufferOffset - (this.includeDelimiter ? 0 : this.delimiter.length)
+      const packet = this.buffer.slice(bufferStart, packetEnd)
+      this.push(packet)
+      bufferStart = bufferOffset
     }
-    this.buffer = data
+    if (bufferStart > 0) {
+      this.buffer = this.buffer.shallowSlice(bufferStart)
+    }
     cb()
   }
 
   _flush(cb) {
-    this.push(this.buffer)
-    this.buffer = Buffer.alloc(0)
+    this.push(this.buffer.slice())
+    this.buffer = bl()
     cb()
   }
 }
